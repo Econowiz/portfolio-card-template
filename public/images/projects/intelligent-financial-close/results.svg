@@ -1,0 +1,43 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="results-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#064e3b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#results-bg)"/>
+  
+  <!-- Results header -->
+  <text x="300" y="40" text-anchor="middle" fill="white" font-size="20" font-family="Arial, sans-serif" font-weight="bold">Business Impact Results</text>
+  
+  <!-- ROI Circle -->
+  <circle cx="150" cy="150" r="60" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="8"/>
+  <circle cx="150" cy="150" r="60" fill="none" stroke="white" stroke-width="8" stroke-dasharray="75 25" transform="rotate(-90 150 150)"/>
+  <text x="150" y="145" text-anchor="middle" fill="white" font-size="24" font-family="Arial, sans-serif" font-weight="bold">280%</text>
+  <text x="150" y="165" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="12" font-family="Arial, sans-serif">ROI</text>
+  
+  <!-- Savings visualization -->
+  <rect x="250" y="90" width="320" height="140" fill="rgba(255,255,255,0.1)" rx="8"/>
+  <text x="260" y="115" fill="white" font-size="16" font-family="Arial, sans-serif" font-weight="bold">Annual Savings Breakdown</text>
+  
+  <rect x="260" y="130" width="240" height="20" fill="rgba(34, 197, 94, 0.8)" rx="3"/>
+  <text x="270" y="145" fill="white" font-size="12" font-family="Arial, sans-serif">Labor Savings: $200K</text>
+  
+  <rect x="260" y="160" width="120" height="20" fill="rgba(59, 130, 246, 0.8)" rx="3"/>
+  <text x="270" y="175" fill="white" font-size="12" font-family="Arial, sans-serif">Risk Reduction: $50K</text>
+  
+  <rect x="260" y="190" width="80" height="20" fill="rgba(245, 158, 11, 0.8)" rx="3"/>
+  <text x="270" y="205" fill="white" font-size="12" font-family="Arial, sans-serif">Efficiency: $35K</text>
+  
+  <!-- Key metrics -->
+  <rect x="50" y="260" width="500" height="100" fill="rgba(255,255,255,0.1)" rx="8"/>
+  <text x="60" y="285" fill="white" font-size="14" font-family="Arial, sans-serif" font-weight="bold">Key Achievements</text>
+  
+  <text x="60" y="310" fill="rgba(255,255,255,0.9)" font-size="12" font-family="Arial, sans-serif">• Close timeline reduced from 12 to 8.4 days</text>
+  <text x="60" y="330" fill="rgba(255,255,255,0.9)" font-size="12" font-family="Arial, sans-serif">• 432 hours saved annually through automation</text>
+  <text x="60" y="350" fill="rgba(255,255,255,0.9)" font-size="12" font-family="Arial, sans-serif">• 23 anomalies proactively identified and resolved</text>
+  
+  <text x="320" y="310" fill="rgba(255,255,255,0.9)" font-size="12" font-family="Arial, sans-serif">• 3.2 month payback period achieved</text>
+  <text x="320" y="330" fill="rgba(255,255,255,0.9)" font-size="12" font-family="Arial, sans-serif">• 87% ML model accuracy maintained</text>
+  <text x="320" y="350" fill="rgba(255,255,255,0.9)" font-size="12" font-family="Arial, sans-serif">• 73.7% overall automation rate</text>
+</svg>

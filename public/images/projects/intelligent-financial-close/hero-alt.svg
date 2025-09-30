@@ -1,0 +1,17 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <rect x="50" y="50" width="700" height="300" fill="rgba(255,255,255,0.1)" rx="10"/>
+  <text x="400" y="120" text-anchor="middle" fill="white" font-size="28" font-family="Arial, sans-serif" font-weight="bold">Intelligent Financial Close System</text>
+  <text x="400" y="160" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="16" font-family="Arial, sans-serif">ML-Powered Enterprise Automation</text>
+  <circle cx="200" cy="220" r="30" fill="rgba(34, 197, 94, 0.3)"/>
+  <circle cx="300" cy="240" r="25" fill="rgba(59, 130, 246, 0.3)"/>
+  <circle cx="500" cy="210" r="35" fill="rgba(245, 158, 11, 0.3)"/>
+  <circle cx="600" cy="260" r="20" fill="rgba(139, 92, 246, 0.3)"/>
+  <text x="400" y="320" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="14" font-family="Arial, sans-serif">73.7% Automation • $285K Savings • 280% ROI</text>
+</svg>

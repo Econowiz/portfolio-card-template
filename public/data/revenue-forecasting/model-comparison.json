@@ -1,0 +1,42 @@
+[
+  {
+    "model": "Ensemble",
+    "accuracy": 92.3,
+    "mape": 7.8,
+    "rmse": 45000,
+    "training_time": 45,
+    "description": "Combination of multiple models"
+  },
+  {
+    "model": "Random Forest",
+    "accuracy": 89.5,
+    "mape": 10.2,
+    "rmse": 52000,
+    "training_time": 12,
+    "description": "Tree-based ensemble method"
+  },
+  {
+    "model": "Neural Network",
+    "accuracy": 87.8,
+    "mape": 11.8,
+    "rmse": 58000,
+    "training_time": 120,
+    "description": "Deep learning approach"
+  },
+  {
+    "model": "ARIMA",
+    "accuracy": 84.2,
+    "mape": 15.1,
+    "rmse": 68000,
+    "training_time": 8,
+    "description": "Time series statistical model"
+  },
+  {
+    "model": "Linear Regression",
+    "accuracy": 78.5,
+    "mape": 21.2,
+    "rmse": 85000,
+    "training_time": 2,
+    "description": "Simple linear model"
+  }
+]

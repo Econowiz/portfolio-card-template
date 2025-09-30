@@ -1,0 +1,17 @@
+{
+  "overview": {
+    "title": "System Performance Overview",
+    "metrics": {
+      "transactions_processed": 1000,
+      "ml_confidence": 87,
+      "tasks_automated": 17,
+      "annual_savings": 285000
+    }
+  },
+  "performance": {
+    "automation_rate": 73.7,
+    "anomalies_detected": 23,
+    "accuracy_rate": 87,
+    "processing_time": 2.4
+  }
+}

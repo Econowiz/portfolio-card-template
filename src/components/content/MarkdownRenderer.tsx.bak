@@ -1,0 +1,52 @@
+import React from 'react'
+import { marked } from 'marked'
+import type { MarkdownContent } from '../../types'
+
+interface MarkdownRendererProps {
+  content: MarkdownContent
+  className?: string
+}
+
+// Configure marked for better security and formatting
+const configureMarked = () => {
+  marked.setOptions({
+    breaks: true, // Convert \n to <br>
+    gfm: true,    // GitHub flavored markdown
+    headerIds: false, // No auto-generated IDs for security
+    mangle: false,    // Don't mangle email addresses
+  })
+}
+
+// Initialize marked configuration
+configureMarked()
+
+/**
+ * Clean markdown renderer using proper markdown library
+ * Replaces the primitive regex-based parser with marked.js
+ */
+const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, className = '' }) => {
+  const { markdown } = content
+
+  const parseMarkdown = (text: string): string => {
+    try {
+      return marked(text) as string
+    } catch (error) {
+      console.error('Markdown parsing error:', error)
+      // Fallback to plain text with line breaks
+      return text.replace(/\n/g, '<br>')
+    }
+  }
+
+  const htmlContent = parseMarkdown(markdown)
+
+  return (
+    <div className={`bg-gradient-jet p-6 rounded-xl border border-jet prose prose-sm max-w-none ${className}`}>
+      <div 
+        className="space-y-4"
+        dangerouslySetInnerHTML={{ __html: htmlContent }}
+      />
+    </div>
+  )
+}
+
+export default MarkdownRenderer

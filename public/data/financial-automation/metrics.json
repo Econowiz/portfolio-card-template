@@ -1,0 +1,98 @@
+[
+  {
+    "month": "Jan",
+    "manual_hours": 45,
+    "automated_hours": 45,
+    "errors": 12,
+    "cost_savings": 0,
+    "phase": "Pre-Implementation"
+  },
+  {
+    "month": "Feb",
+    "manual_hours": 42,
+    "automated_hours": 42,
+    "errors": 15,
+    "cost_savings": 0,
+    "phase": "Pre-Implementation"
+  },
+  {
+    "month": "Mar",
+    "manual_hours": 38,
+    "automated_hours": 38,
+    "errors": 18,
+    "cost_savings": 0,
+    "phase": "Pre-Implementation"
+  },
+  {
+    "month": "Apr",
+    "manual_hours": 35,
+    "automated_hours": 25,
+    "errors": 8,
+    "cost_savings": 350,
+    "phase": "Implementation"
+  },
+  {
+    "month": "May",
+    "manual_hours": 30,
+    "automated_hours": 15,
+    "errors": 4,
+    "cost_savings": 525,
+    "phase": "Implementation"
+  },
+  {
+    "month": "Jun",
+    "manual_hours": 25,
+    "automated_hours": 8,
+    "errors": 2,
+    "cost_savings": 595,
+    "phase": "Implementation"
+  },
+  {
+    "month": "Jul",
+    "manual_hours": 8,
+    "automated_hours": 6,
+    "errors": 0,
+    "cost_savings": 1120,
+    "phase": "Post-Implementation"
+  },
+  {
+    "month": "Aug",
+    "manual_hours": 6,
+    "automated_hours": 6,
+    "errors": 0,
+    "cost_savings": 1400,
+    "phase": "Post-Implementation"
+  },
+  {
+    "month": "Sep",
+    "manual_hours": 6,
+    "automated_hours": 6,
+    "errors": 0,
+    "cost_savings": 1400,
+    "phase": "Post-Implementation"
+  },
+  {
+    "month": "Oct",
+    "manual_hours": 5,
+    "automated_hours": 5,
+    "errors": 0,
+    "cost_savings": 1435,
+    "phase": "Post-Implementation"
+  },
+  {
+    "month": "Nov",
+    "manual_hours": 5,
+    "automated_hours": 5,
+    "errors": 0,
+    "cost_savings": 1435,
+    "phase": "Post-Implementation"
+  },
+  {
+    "month": "Dec",
+    "manual_hours": 5,
+    "automated_hours": 5,
+    "errors": 0,
+    "cost_savings": 1435,
+    "phase": "Post-Implementation"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "month": "Jan 2023",
+    "actual": 850000,
+    "forecast": 845000,
+    "confidence_upper": 890000,
+    "confidence_lower": 800000,
+    "accuracy": 99.4
+  },
+  {
+    "month": "Feb 2023",
+    "actual": 920000,
+    "forecast": 915000,
+    "confidence_upper": 965000,
+    "confidence_lower": 865000,
+    "accuracy": 99.5
+  },
+  {
+    "month": "Mar 2023",
+    "actual": 1050000,
+    "forecast": 1040000,
+    "confidence_upper": 1095000,
+    "confidence_lower": 985000,
+    "accuracy": 99.0
+  },
+  {
+    "month": "Apr 2023",
+    "actual": 980000,
+    "forecast": 995000,
+    "confidence_upper": 1045000,
+    "confidence_lower": 945000,
+    "accuracy": 98.5
+  },
+  {
+    "month": "May 2023",
+    "actual": 1120000,
+    "forecast": 1105000,
+    "confidence_upper": 1165000,
+    "confidence_lower": 1045000,
+    "accuracy": 98.7
+  },
+  {
+    "month": "Jun 2023",
+    "actual": 1180000,
+    "forecast": 1165000,
+    "confidence_upper": 1230000,
+    "confidence_lower": 1100000,
+    "accuracy": 98.7
+  },
+  {
+    "month": "Jul 2023",
+    "actual": 1250000,
+    "forecast": 1235000,
+    "confidence_upper": 1305000,
+    "confidence_lower": 1165000,
+    "accuracy": 98.8
+  },
+  {
+    "month": "Aug 2023",
+    "actual": 1320000,
+    "forecast": 1310000,
+    "confidence_upper": 1385000,
+    "confidence_lower": 1235000,
+    "accuracy": 99.2
+  },
+  {
+    "month": "Sep 2023",
+    "actual": 1280000,
+    "forecast": 1295000,
+    "confidence_upper": 1365000,
+    "confidence_lower": 1225000,
+    "accuracy": 98.8
+  },
+  {
+    "month": "Oct 2023",
+    "actual": 1350000,
+    "forecast": 1340000,
+    "confidence_upper": 1415000,
+    "confidence_lower": 1265000,
+    "accuracy": 99.3
+  },
+  {
+    "month": "Nov 2023",
+    "actual": 1420000,
+    "forecast": 1405000,
+    "confidence_upper": 1485000,
+    "confidence_lower": 1325000,
+    "accuracy": 98.9
+  },
+  {
+    "month": "Dec 2023",
+    "actual": 1580000,
+    "forecast": 1565000,
+    "confidence_upper": 1655000,
+    "confidence_lower": 1475000,
+    "accuracy": 99.1
+  },
+  {
+    "month": "Jan 2024",
+    "actual": null,
+    "forecast": 1620000,
+    "confidence_upper": 1710000,
+    "confidence_lower": 1530000,
+    "accuracy": null
+  },
+  {
+    "month": "Feb 2024",
+    "actual": null,
+    "forecast": 1680000,
+    "confidence_upper": 1775000,
+    "confidence_lower": 1585000,
+    "accuracy": null
+  },
+  {
+    "month": "Mar 2024",
+    "actual": null,
+    "forecast": 1750000,
+    "confidence_upper": 1850000,
+    "confidence_lower": 1650000,
+    "accuracy": null
+  }
+]

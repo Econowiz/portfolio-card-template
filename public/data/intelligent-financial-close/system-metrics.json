@@ -1,0 +1,19 @@
+{
+  "accounts_by_risk": [
+    {"category": "Low", "value": 62},
+    {"category": "Medium", "value": 28},
+    {"category": "High", "value": 10}
+  ],
+  "timeline_comparison": [
+    {"date": "2024-08-01", "baseline": 100, "current": 72},
+    {"date": "2024-09-01", "baseline": 100, "current": 70},
+    {"date": "2024-10-01", "baseline": 100, "current": 68}
+  ],
+  "cost_breakdown": [
+    {"category": "Labor", "value": 120600},
+    {"category": "Overtime", "value": 16200},
+    {"category": "Contractors", "value": 17280},
+    {"category": "Errors", "value": 10200}
+  ]
+}
+

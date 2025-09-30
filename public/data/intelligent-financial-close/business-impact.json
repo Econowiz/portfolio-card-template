@@ -1,0 +1,19 @@
+{
+  "accounts_by_risk": [
+    {"category": "Labor Savings", "value": 120600},
+    {"category": "Overtime Eliminated", "value": 16200},
+    {"category": "Contractor Reduction", "value": 17280},
+    {"category": "Error Reduction", "value": 10200}
+  ],
+  "timeline_comparison": [
+    {"day": 0, "Before": 0, "After": 0},
+    {"day": 5, "Before": 60, "After": 80},
+    {"day": 7, "Before": 75, "After": 100},
+    {"day": 10, "Before": 100, "After": 100}
+  ],
+  "cost_breakdown": [
+    {"category": "Baseline Cost", "value": 165000},
+    {"category": "Post-Implementation Cost", "value": 75000}
+  ]
+}
+

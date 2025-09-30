@@ -1,0 +1,93 @@
+import { defineConfig } from 'vite'
+import path from 'node:path'
+import react from '@vitejs/plugin-react'
+import { visualizer } from 'rollup-plugin-visualizer'
+
+// Simple environment validation for production builds
+function validateProductionEnv() {
+  // Only validate when explicitly building for production
+  if (process.env.NODE_ENV === 'production' && process.env.VALIDATE_ENV === 'true') {
+    const requiredVars = [
+      'VITE_EMAILJS_SERVICE_ID',
+      'VITE_EMAILJS_TEMPLATE_ID',
+      'VITE_EMAILJS_PUBLIC_KEY'
+    ]
+
+    const placeholders = [
+      'service_placeholder',
+      'template_placeholder',
+      'public_key_placeholder',
+      'your_service_id_here',
+      'your_template_id_here',
+      'your_public_key_here'
+    ]
+
+    const errors: string[] = []
+
+    for (const varName of requiredVars) {
+      const value = process.env[varName]
+      if (!value) {
+        errors.push(`${varName} is required but not set`)
+      } else if (placeholders.includes(value)) {
+        errors.push(`${varName} contains placeholder value: "${value}"`)
+      }
+    }
+
+    if (errors.length > 0) {
+      console.error('\n❌ Environment validation failed:')
+      errors.forEach(error => console.error(`   ${error}`))
+      console.error('\n📖 For setup instructions, see EMAILJS_SETUP.md')
+      throw new Error('Environment validation failed')
+    }
+
+    console.log('✅ Environment variables validated successfully')
+  }
+}
+
+// Environment validation plugin
+function envValidationPlugin() {
+  return {
+    name: 'env-validation',
+    buildStart() {
+      validateProductionEnv()
+    }
+  }
+}
+
+// https://vite.dev/config/
+export default defineConfig(({ mode }) => {
+  const isAnalyze = mode === 'analyze'
+  
+  return {
+    plugins: [
+      react(),
+      envValidationPlugin(),
+      // Add bundle analyzer when running in analyze mode
+      ...(isAnalyze ? [
+        visualizer({
+          filename: 'dist/bundle-analysis.html',
+          open: true,
+          gzipSize: true,
+          brotliSize: true,
+          template: 'treemap'
+        })
+      ] : [])
+    ],
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'),
+        buffer: path.resolve(__dirname, './src/polyfills/buffer.ts'),
+        'buffer/': path.resolve(__dirname, './src/polyfills/buffer.ts'),
+      },
+    },
+    define: {
+      global: 'globalThis',
+    },
+    optimizeDeps: {
+      include: ['buffer'],
+    },
+    // GitHub Pages configuration
+    // For user site repos (username.github.io) keep '/'. For project pages, set env GHPAGES_BASE to '/repo-name/'.
+    base: (process.env.GHPAGES_BASE && process.env.GHPAGES_BASE.trim()) || (process.env.NODE_ENV === 'production' ? '/' : '/'),
+  }
+})

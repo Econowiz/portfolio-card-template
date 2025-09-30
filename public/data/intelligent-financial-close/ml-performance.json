@@ -1,0 +1,18 @@
+{
+  "accounts_by_risk": [
+    {"account_type": "No Issue", "count": 77},
+    {"account_type": "Minor", "count": 15},
+    {"account_type": "Major", "count": 8}
+  ],
+  "timeline_comparison": [
+    {"date": "2024-08-01", "baseline": 100, "current": 74},
+    {"date": "2024-09-01", "baseline": 100, "current": 72},
+    {"date": "2024-10-01", "baseline": 100, "current": 70}
+  ],
+  "cost_breakdown": [
+    {"category": "Manual Review Saved", "value": 80500},
+    {"category": "Error Reduction", "value": 10200},
+    {"category": "Contractor Reduction", "value": 17280}
+  ]
+}
+

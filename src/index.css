@@ -1,0 +1,178 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Import typography system */
+@import './styles/typography.css';
+
+/* Import chart styles */
+@import './styles/charts.css';
+
+/* Webfonts are loaded via <link> tags in index.html for better caching and control */
+
+/* Custom CSS variables for vCard theme */
+:root {
+  /* Colors from original vCard */
+  --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
+  --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+  --text-gradient-yellow: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+
+  /* Typography */
+  --font-sans: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Fraunces', serif;
+  /* Adjustable weight for demo */
+  --font-weight-sans: 400;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-sans, 400);
+  background-color: #000; /* was hsl(240, 2%, 12%) */
+  color: hsl(0, 0%, 84%);
+  line-height: 1.6;
+  overflow-x: hidden;
+  /* Prefer single-story 'a' when available (e.g., Inter ss01) */
+  font-feature-settings: "ss01" 1, "cv01" 1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(240, 2%, 13%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(45, 100%, 72%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(35, 100%, 68%);
+}
+
+/* Utility classes */
+.text-gradient-yellow {
+  background: var(--text-gradient-yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+/* Subtle animated underline for current location */
+@keyframes location-travel {
+  0% { background-position-x: 0%; }
+  100% { background-position-x: 200%; }
+}
+.location-underline {
+  background-image: linear-gradient(90deg, rgba(59,130,246,0.35), rgba(16,185,129,0.35), rgba(59,130,246,0.35));
+  background-size: 200% 2px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  padding-bottom: 2px;
+  animation: location-travel 6s linear infinite;
+}
+
+/* Global dot background + fade, fixed across the entire app */
+:root {
+  --dot-size: 16px 16px; /* was 20px 20px */
+  --dot-light: #d4d4d4;
+  --dot-dark: #404040;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+#root {
+  position: relative;
+  z-index: 1; /* ensure content sits above background layers */
+}
+
+/* Accessible skip link */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-200%);
+  background: #111827; /* gray-900 */
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 50;
+}
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid hsl(45, 100%, 72%);
+}
+
+/* Dots layer */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-size: var(--dot-size);
+  background-image: radial-gradient(var(--dot-dark) 1px, transparent 1px);
+  z-index: 0;
+}
+
+
+/* Soft radial fade/vignette */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: #000;
+  -webkit-mask-image: radial-gradient(ellipse at center, transparent 20%, black);
+  mask-image: radial-gradient(ellipse at center, transparent 20%, black);
+  z-index: 0;
+}
+@media (prefers-color-scheme: dark) {
+  body::after { background: #000; }
+}
+
+/* Also support class-based dark mode */
+.dark body::before { background-image: radial-gradient(var(--dot-dark) 1px, transparent 1px); }
+.dark body::after { background: #000; }
+
+
+/* Print styles for Markdown viewer and content */
+@media print {
+  nav, aside, footer { display: none !important; }
+  body { background: #fff !important; color: #000 !important; }
+  .bg-gradient-jet, .bg-eerie-black-2 { background: #fff !important; }
+  .border, .border-jet { border-color: #000 !important; }
+  .markdown-content { color: #000 !important; }
+  /* Ensure code blocks print with light theme */
+  pre, pre code, code.hljs, .hljs { background: #fff !important; color: #000 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  @page { margin: 1in; }
+}
+
+/* Reader card: solid background for markdown readability */
+.reader-card {
+  background: #0b0b0b; /* solid, hides dot grid */
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+}
+
+@media print {
+  .reader-card { background: #fff !important; box-shadow: none !important; }
+}

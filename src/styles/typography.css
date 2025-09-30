@@ -1,0 +1,96 @@
+@layer components {
+  /* Typography System - Consistent heading hierarchy */
+
+  /* Page-level headings - h1 */
+  .page-title {
+    @apply font-sans text-heading-md text-white-1 mb-6 font-semibold tracking-wide;
+  }
+
+  /* Sidebar name (left only) */
+  .sidebar-name {
+    @apply font-heading text-heading-sm text-white-1 font-semibold tracking-wide;
+  }
+
+  /* Section headings - h2 */
+  .section-heading {
+    @apply font-sans text-heading-sm text-white-1 mb-4 font-semibold;
+  }
+
+  /* Subsection headings - h3 */
+  .subsection-heading {
+    @apply font-sans text-heading-xs text-white-1 mb-3 font-medium;
+  }
+
+  /* Card/Component titles - h4 */
+  .card-title {
+    @apply font-sans text-heading-xs text-white-1 mb-2 font-medium;
+  }
+
+  /* Small headings - h5, h6 */
+  .small-heading {
+    @apply font-sans text-base text-white-1 mb-2 font-normal;
+  }
+
+  /* Body text variants */
+  .body-large {
+    @apply text-lg text-light-gray leading-relaxed;
+  }
+
+  .body-normal {
+    @apply text-base text-light-gray leading-relaxed;
+  }
+
+  .body-small {
+    @apply text-sm text-light-gray leading-relaxed;
+  }
+
+  /* Interactive elements */
+  .interactive-title {
+    @apply font-sans text-heading-xs text-white-1 font-medium mb-3;
+  }
+
+  /* Navigation and UI text */
+  .nav-text {
+    @apply text-sm font-medium text-light-gray;
+  }
+
+  .nav-text-active {
+    @apply text-sm font-medium text-orange-yellow;
+  }
+
+  /* Special cases for gradients */
+  .heading-gradient {
+    @apply bg-gradient-to-r from-orange-yellow to-vegas-gold bg-clip-text text-transparent;
+  }
+
+  /* Display numbers/metrics */
+  .display-number {
+    @apply text-2xl font-semibold mb-1;
+  }
+
+  /* Responsive typography helpers */
+  .responsive-title {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  .responsive-heading {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  /* Content-specific styles */
+  .project-title {
+    @apply page-title;
+  }
+
+  .project-section {
+    @apply section-heading;
+  }
+
+  .project-subsection {
+    @apply subsection-heading;
+  }
+
+  .project-detail {
+    @apply text-base text-white-1 mb-2 font-normal;
+  }
+}

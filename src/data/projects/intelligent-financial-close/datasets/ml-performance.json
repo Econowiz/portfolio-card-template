@@ -1,0 +1,26 @@
+{
+  "model_performance": {
+    "accuracy": 87,
+    "precision": 89.1,
+    "recall": 85.2,
+    "f1_score": 87.1
+  },
+  "anomaly_detection": {
+    "anomalies_found": 23,
+    "false_positives": 2,
+    "accuracy_rate": 91.3
+  },
+  "accounts_by_risk": [
+    {"account_type": "Low Risk", "count": 156, "color": "#22c55e"},
+    {"account_type": "Medium Risk", "count": 89, "color": "#f59e0b"},
+    {"account_type": "High Risk", "count": 34, "color": "#ef4444"},
+    {"account_type": "Critical", "count": 8, "color": "#dc2626"}
+  ],
+  "processing_timeline": [
+    {"step": "Data Collection", "duration": 0.5, "status": "automated"},
+    {"step": "Validation", "duration": 1.2, "status": "automated"},
+    {"step": "Analysis", "duration": 2.1, "status": "automated"},
+    {"step": "Reporting", "duration": 0.6, "status": "automated"},
+    {"step": "Review", "duration": 3.2, "status": "manual"}
+  ]
+}

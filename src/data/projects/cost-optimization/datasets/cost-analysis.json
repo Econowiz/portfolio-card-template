@@ -1,0 +1,44 @@
+[
+  {
+    "department": "Operations",
+    "before": 120000,
+    "after": 98400,
+    "savings": 21600,
+    "reduction_percent": 18
+  },
+  {
+    "department": "IT",
+    "before": 85000,
+    "after": 74800,
+    "savings": 10200,
+    "reduction_percent": 12
+  },
+  {
+    "department": "Marketing",
+    "before": 95000,
+    "after": 76000,
+    "savings": 19000,
+    "reduction_percent": 20
+  },
+  {
+    "department": "HR",
+    "before": 65000,
+    "after": 58500,
+    "savings": 6500,
+    "reduction_percent": 10
+  },
+  {
+    "department": "Finance",
+    "before": 75000,
+    "after": 67500,
+    "savings": 7500,
+    "reduction_percent": 10
+  },
+  {
+    "department": "Legal",
+    "before": 45000,
+    "after": 40500,
+    "savings": 4500,
+    "reduction_percent": 10
+  }
+]

@@ -1,0 +1,97 @@
+/* Chart hover and focus fixes */
+.recharts-container-wrapper * {
+  outline: none !important;
+}
+
+.recharts-container-wrapper .recharts-surface {
+  outline: none !important;
+}
+
+.recharts-container-wrapper .recharts-bar-rectangle {
+  outline: none !important;
+  filter: none !important;
+}
+
+.recharts-container-wrapper .recharts-bar-rectangle:hover {
+  outline: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.recharts-container-wrapper .recharts-line-dot {
+  outline: none !important;
+  filter: none !important;
+}
+
+.recharts-container-wrapper .recharts-line-dot:hover {
+  outline: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.recharts-container-wrapper .recharts-curve {
+  outline: none !important;
+  filter: none !important;
+}
+
+.recharts-container-wrapper .recharts-active-dot {
+  outline: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.recharts-container-wrapper .recharts-layer {
+  outline: none !important;
+}
+
+.recharts-container-wrapper .recharts-wrapper {
+  outline: none !important;
+}
+
+.recharts-container-wrapper *:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.recharts-container-wrapper *:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove any browser default focus rings on SVG elements */
+.recharts-container-wrapper svg * {
+  outline: none !important;
+}
+
+.recharts-container-wrapper g {
+  outline: none !important;
+}
+
+.recharts-container-wrapper rect {
+  outline: none !important;
+}
+
+.recharts-container-wrapper path {
+  outline: none !important;
+}
+
+.recharts-container-wrapper circle {
+  outline: none !important;
+}
+
+/* Ensure no grey shadows appear on any chart elements */
+.recharts-container-wrapper * {
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Override any default browser selection styles */
+.recharts-container-wrapper *::selection {
+  background: transparent !important;
+}
+
+.recharts-container-wrapper *::-moz-selection {
+  background: transparent !important;
+}
+
+/* Tooltips disabled at component level to prevent grey shadow effect */

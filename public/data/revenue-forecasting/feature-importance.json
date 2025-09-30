@@ -1,0 +1,27 @@
+[
+  {
+    "feature": "Historical Revenue",
+    "importance": 0.35,
+    "description": "Past revenue trends and patterns"
+  },
+  {
+    "feature": "Seasonality",
+    "importance": 0.22,
+    "description": "Seasonal variations and cycles"
+  },
+  {
+    "feature": "Market Indicators",
+    "importance": 0.18,
+    "description": "External market conditions"
+  },
+  {
+    "feature": "Customer Metrics",
+    "importance": 0.15,
+    "description": "Customer acquisition and retention"
+  },
+  {
+    "feature": "Economic Factors",
+    "importance": 0.10,
+    "description": "GDP, inflation, interest rates"
+  }
+]

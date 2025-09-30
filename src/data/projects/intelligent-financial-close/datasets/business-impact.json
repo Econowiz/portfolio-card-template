@@ -1,0 +1,36 @@
+{
+  "financial_impact": {
+    "annual_savings": 285000,
+    "implementation_cost": 75000,
+    "roi_percentage": 280,
+    "payback_months": 3.2,
+    "hours_saved_annually": 432
+  },
+  "timeline_comparison": [
+    {"day": 1, "Before": 8, "After": 12, "category": "Before Implementation"},
+    {"day": 2, "Before": 15, "After": 22, "category": "Before Implementation"},
+    {"day": 3, "Before": 25, "After": 38, "category": "Before Implementation"},
+    {"day": 4, "Before": 35, "After": 52, "category": "Before Implementation"},
+    {"day": 5, "Before": 45, "After": 68, "category": "Before Implementation"},
+    {"day": 6, "Before": 52, "After": 78, "category": "Before Implementation"},
+    {"day": 7, "Before": 58, "After": 85, "category": "After Implementation"},
+    {"day": 8, "Before": 65, "After": 90, "category": "After Implementation"},
+    {"day": 9, "Before": 72, "After": 94, "category": "After Implementation"},
+    {"day": 10, "Before": 78, "After": 97, "category": "After Implementation"},
+    {"day": 11, "Before": 85, "After": 99, "category": "After Implementation"},
+    {"day": 12, "Before": 100, "After": 100, "category": "After Implementation"}
+  ],
+  "cost_breakdown": [
+    {"category": "Labor Savings", "amount": 200000, "percentage": 70.2},
+    {"category": "Risk Reduction", "amount": 50000, "percentage": 17.5},
+    {"category": "Process Efficiency", "amount": 35000, "percentage": 12.3}
+  ],
+  "monthly_progress": [
+    {"month": "Jan", "savings": 18000, "target": 20000},
+    {"month": "Feb", "savings": 21000, "target": 22000},
+    {"month": "Mar", "savings": 24000, "target": 24000},
+    {"month": "Apr", "savings": 26000, "target": 25000},
+    {"month": "May", "savings": 25000, "target": 25000},
+    {"month": "Jun", "savings": 27000, "target": 26000}
+  ]
+}
