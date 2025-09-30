@@ -17,15 +17,15 @@ const About = ({ setActiveTab, setSelectedProject }: AboutProps = {}) => {
 
   const featuredProjects = [
     {
-      id: 'intelligent-financial-close',
+      id: 'sample-project',
       icon: Target,
-      title: 'Intelligent Financial Close System',
-      challenge: '12+ day month-end close with fragmented data and heavy manual review',
-      solution: 'Implemented ML-assisted anomaly detection, automated workflows, and executive dashboards',
-      impact: '73.7% automation rate, $285K annual savings, and a 280% ROI with an 8-hour close',
-      businessValue: 'Financial transparency, faster decision cycles, and confident compliance posture',
+      title: 'Sample Project Case Study',
+      challenge: 'Demonstrate the template project flow with placeholder data',
+      solution: 'Use a simple two-section case study and optional charts to show layout and navigation',
+      impact: 'Faster first-run experience and clearer customization path',
+      businessValue: 'Clear structure for adding your own projects and results',
       category: 'Financial Analytics',
-      tags: ['Python', 'Machine Learning', 'Process Automation', 'Analytics']
+      tags: ['template', 'demo']
     }
   ]
 

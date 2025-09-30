@@ -30,8 +30,8 @@ const Dashboard: React.FC<DashboardProps> = ({ component, className }) => {
       return isAbsolute
         ? [src]
         : [
-            `/data/intelligent-financial-close/${src}.json`,
-            `/data/projects/intelligent-financial-close/datasets/${src}.json`,
+            `/data/sample-project/${src}.json`,
+            `/data/projects/sample-project/datasets/${src}.json`,
           ]
     }
 

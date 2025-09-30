@@ -47,15 +47,15 @@ interface PortfolioProps {
 // Fallback projects (module-level constant for stable reference)
 const fallbackProjects: ProjectSummary[] = [
   {
-    id: 'intelligent-financial-close',
-    title: 'Intelligent Financial Close System',
+    id: 'sample-project',
+    title: 'Sample Project Case Study',
     category: 'Financial Analytics',
-    type: 'interactive',
-    description: 'Enterprise ML-powered financial close automation achieving 73.7% automation rate, $285K annual savings, and 280% ROI through advanced anomaly detection and predictive analytics.',
-    tags: ['Python', 'Machine Learning', 'Financial Analytics', 'Process Automation', 'ML', 'Statistical Analysis'],
-    duration: '6 months',
-    client: 'Industry: Enterprise Finance',
-    hasInteractive: true,
+    type: 'standard',
+    description: 'A minimal case study to preview the portfolio flow and sections.',
+    tags: ['template', 'demo'],
+    duration: '2 weeks',
+    client: 'Acme Inc.',
+    hasInteractive: false,
     featured: true,
     order: 0
   }

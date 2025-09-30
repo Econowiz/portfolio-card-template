@@ -31,27 +31,16 @@ interface BlogIndex {
 // Fallback blog posts (module-level constant for stable reference)
 const fallbackBlogPosts: BlogPost[] = [
   {
-    id: 'from-excel-to-cloud-the-modern-finance-stack-revolution',
-    title: 'From Excel to Cloud: The Modern Finance Stack Revolution',
-    category: 'Finance',
-    date: '2025-03-22',
-    excerpt: 'How finance teams graduate from spreadsheet sprawl to a modern cloud-first stack without losing Excel.',
-    tags: ['python', 'cloud', 'automation'],
-    author: 'Your Name',
-    readTime: '8 min read',
-    featured: false,
-    image: '/images/blog/from-excel-to-cloud-the-modern-finance-stack-revolution/hero.webp'
-  },
-  {
-    id: 'the-rise-of-real-time-financial-intelligence',
-    title: 'The Rise of Real-Time Financial Intelligence',
+    id: 'hello-world',
+    title: 'Hello, Portfolio Template',
     category: 'Analytics',
-    date: '2025-03-15',
-    excerpt: 'Discover how real-time data streams and AI-powered analytics are transforming finance from periodic reporting to continuous intelligence.',
-    tags: ['AI', 'real-time', 'dashboards'],
+    date: '2025-06-01',
+    excerpt: 'A sample post to verify the template layout, typography, and routing.',
+    tags: ['template', 'getting-started'],
     author: 'Your Name',
-    readTime: '7 min read',
-    featured: false
+    readTime: '2 min read',
+    featured: false,
+    image: '/images/blog/hello-world/hero.webp'
   }
 ]
 
