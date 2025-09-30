@@ -1,0 +1,31 @@
+{
+  "id": "sample-project",
+  "title": "Sample Project Case Study",
+  "category": "Financial Analytics",
+  "type": "standard",
+  "description": "A minimal case study to preview the portfolio flow and sections.",
+  "tags": ["template", "demo"],
+  "duration": "2 weeks",
+  "client": "Acme Inc.",
+  "hero_image": "/images/projects/sample-project/hero.webp",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "type": "content",
+      "order": 1,
+      "content": {
+        "markdown": "## What We Built\n\nThis sample project demonstrates the layout, tags, and section rendering."
+      }
+    },
+    {
+      "id": "results",
+      "title": "Results",
+      "type": "content",
+      "order": 2,
+      "content": {
+        "markdown": "- Faster iteration\n- Clean handoff\n- Clear structure"
+      }
+    }
+  ]
+}

@@ -1,3 +1,22 @@
 {
-  "projects": []
+  "projects": [
+    {
+      "id": "sample-project",
+      "title": "Sample Project Case Study",
+      "category": "Financial Analytics",
+      "type": "standard",
+      "description": "A minimal case study to preview the portfolio flow and sections.",
+      "tags": ["template", "demo"],
+      "duration": "2 weeks",
+      "client": "Acme Inc.",
+      "hero_image": "/images/projects/sample-project/hero.webp",
+      "hasInteractive": false,
+      "featured": false,
+      "order": 1
+    }
+  ],
+  "categories": [
+    { "id": "financial-analytics", "name": "Financial Analytics", "description": "Analytics & modeling", "color": "blue", "icon": "chart" }
+  ],
+  "tags": ["template", "demo"]
 }

@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "id": "hello-world",
+      "title": "Hello, Portfolio Template",
+      "category": "Analytics",
+      "date": "2025-06-01",
+      "excerpt": "A sample post to verify the template layout, typography, and routing.",
+      "tags": ["template", "getting-started"],
+      "author": "Your Name",
+      "readTime": "2 min read",
+      "featured": false,
+      "image": "/images/blog/hello-world/hero.webp"
+    }
+  ],
+  "categories": [
+    { "id": "analytics", "name": "Analytics", "description": "Data analysis & visualization", "color": "green" }
+  ],
+  "tags": ["template", "getting-started"]
+}
