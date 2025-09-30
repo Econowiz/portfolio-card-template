@@ -48,8 +48,8 @@ const Sidebar = () => {
   const socialLinks = [
     { name: 'LinkedIn', url: 'https://www.linkedin.com/in/your-handle/', icon: SiLinkedin },
     { name: 'GitHub',   url: 'https://github.com/your-handle',     icon: SiGithub },
-    { name: 'Threads',  url: 'https://www.threads.com/@franck.douey?igshid=NTc4MTIwNjQ2YQ==', icon: SiThreads },
-    // { name: 'X',        url: 'https://x.com/franckdouey?s=21',       icon: SiX },
+    { name: 'Threads',  url: 'https://www.threads.net/@your-handle', icon: SiThreads },
+    // { name: 'X',        url: 'https://x.com/your-handle',       icon: SiX },
   ]
 
   return (
@@ -74,7 +74,7 @@ const Sidebar = () => {
 
           <div className="space-y-3">
             <h1 className="sidebar-name">
-              Your Name-Doué
+              Your Name
             </h1>
 
             <p className="text-gradient-yellow body-small bg-gradient-yellow-1 px-3 py-1 rounded-lg inline-block">

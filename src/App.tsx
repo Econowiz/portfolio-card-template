@@ -28,21 +28,21 @@ function MetaUpdater() {
 
 
     const titleMap: Record<string, string> = {
-      '/about': 'About — Franck Rafiou',
-      '/portfolio': 'Portfolio — Franck Rafiou',
-      '/blog': 'Blog — Franck Rafiou',
-      '/contact': 'Contact — Franck Rafiou'
+      '/about': 'About — Your Name',
+      '/portfolio': 'Portfolio — Your Name',
+      '/blog': 'Blog — Your Name',
+      '/contact': 'Contact — Your Name'
     }
 
     const descMap: Record<string, string> = {
-      '/about': 'About Franck Rafiou — Strategic Finance & Analytics professional blending financial rigor with data-driven insight.',
-      '/portfolio': 'Selected projects in financial analytics, automation, and business intelligence by Franck Rafiou.',
-      '/blog': 'Articles and notes on finance, analytics, and operations by Franck Rafiou.',
-      '/contact': 'Get in touch with Franck Rafiou — available for impactful projects.'
+      '/about': 'About — Brief bio and capabilities.',
+      '/portfolio': 'Selected projects and case studies.',
+      '/blog': 'Articles and notes on your topics.',
+      '/contact': 'Get in touch — available for impactful projects.'
     }
 
-    const defaultTitle = 'Franck Rafiou — Portfolio'
-    const defaultDesc = 'Strategic Finance & Analytics professional specializing in financial analysis, automation, and business intelligence.'
+    const defaultTitle = 'Your Name — Portfolio'
+    const defaultDesc = 'Professional portfolio showcasing projects, writing, and capabilities.'
 
     const nextTitle = titleMap[path] ?? defaultTitle
     const nextDesc = descMap[path] ?? defaultDesc

@@ -116,10 +116,10 @@ const ProjectDetail = ({ projectId, onBack }: ProjectDetailProps) => {
   // Simple SEO: Update document title when project loads
   useEffect(() => {
     if (projectData) {
-      document.title = `${projectData.title} - Franck Rafiou Portfolio`
+      document.title = `${projectData.title} - Portfolio`
     }
     return () => {
-      document.title = 'Franck Rafiou - Portfolio'
+      document.title = 'Portfolio'
     }
   }, [projectData])
 

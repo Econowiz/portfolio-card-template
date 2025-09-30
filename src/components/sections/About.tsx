@@ -81,7 +81,7 @@ const About = ({ setActiveTab, setSelectedProject }: AboutProps = {}) => {
 
         <div className="space-y-4 text-left">
           <p className="body-normal">
-            I translate complex business operations into clear, data-driven action. Whether modernizing finance workflows, building analytics platforms, or partnering with operations teams, I combine controller-level insight with modern data science to unlock measurable results for operators and decision makers.
+            Write a short introduction about yourself and what you do. Consider a one‑liner that blends your domain expertise with your technical edge (e.g., “I turn business complexity into clear, data‑driven action”).
           </p>
         </div>
       </motion.div>

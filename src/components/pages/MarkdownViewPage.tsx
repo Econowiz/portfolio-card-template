@@ -18,7 +18,7 @@ const MarkdownViewPage = () => {
   const [loading, setLoading] = useState<boolean>(true)
 
   useEffect(() => {
-    document.title = 'Document — Franck Rafiou'
+    document.title = 'Document — Portfolio'
     // Ensure new document views start at top
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
   }, [])

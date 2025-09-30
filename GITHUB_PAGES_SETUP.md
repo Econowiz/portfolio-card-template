@@ -21,7 +21,7 @@ Push to main branch - GitHub Actions will automatically deploy!
 
 ## Your site will be available at:
 ```
-https://econowiz.github.io/
+https://your-username.github.io/
 ```
 
 ## Manual Deployment (Alternative)
@@ -36,7 +36,7 @@ pnpm run deploy
 ## Important Changes Made for GitHub Pages:
 
 1. **Router**: Changed from BrowserRouter to HashRouter for GitHub Pages compatibility
-2. **Base Path**: Root path configuration for econowiz.github.io
+2. **Base Path**: Root path configuration for a user site (your-username.github.io)
 3. **GitHub Actions**: Automated deployment workflow created
 4. **Scripts**: Added `build:gh-pages` and `deploy` commands
 

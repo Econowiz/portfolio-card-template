@@ -77,7 +77,7 @@ Categories: Finance, Analytics, Investment, Automation, International, M&A, Prog
     date: new Date().toISOString().split('T')[0],
     excerpt: `${title} — Add a short teaser here`,
     tags: tags.length > 0 ? tags : [category.toLowerCase()],
-    author: 'Franck Rafiou',
+    author: 'Your Name',
     readTime: '5 min read',
     featured: false,
     image: `/images/blog/${slug}/hero.webp`

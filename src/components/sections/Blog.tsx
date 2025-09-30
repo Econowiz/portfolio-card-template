@@ -37,7 +37,7 @@ const fallbackBlogPosts: BlogPost[] = [
     date: '2025-03-22',
     excerpt: 'How finance teams graduate from spreadsheet sprawl to a modern cloud-first stack without losing Excel.',
     tags: ['python', 'cloud', 'automation'],
-    author: 'Franck Rafiou',
+    author: 'Your Name',
     readTime: '8 min read',
     featured: false,
     image: '/images/blog/from-excel-to-cloud-the-modern-finance-stack-revolution/hero.webp'
@@ -49,7 +49,7 @@ const fallbackBlogPosts: BlogPost[] = [
     date: '2025-03-15',
     excerpt: 'Discover how real-time data streams and AI-powered analytics are transforming finance from periodic reporting to continuous intelligence.',
     tags: ['AI', 'real-time', 'dashboards'],
-    author: 'Franck Rafiou',
+    author: 'Your Name',
     readTime: '7 min read',
     featured: false
   }

@@ -49,7 +49,7 @@ This message was sent from your portfolio contact form.
 
 ## Step 5: Update Environment Variables
 
-1. Open the `.env` file in the `econowiz.github.io` folder
+1. Open the `.env` file in your project folder
 2. Replace the placeholder values with your actual EmailJS credentials:
 
 ```env
