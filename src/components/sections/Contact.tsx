@@ -206,7 +206,7 @@ const Contact = () => {
             register={register('fullName', contactFormValidation.fullName)}
             error={errors.fullName}
             maxLength={100}
-            showCharacterCount={true}
+            showCharacterCount={false}
             realTimeValidation={realTimeValidators.validateNameRealTime}
           />
 
@@ -217,7 +217,7 @@ const Contact = () => {
             register={register('email', contactFormValidation.email)}
             error={errors.email}
             maxLength={254}
-            showCharacterCount={true}
+            showCharacterCount={false}
             realTimeValidation={realTimeValidators.validateEmailRealTime}
           />
 
@@ -228,7 +228,7 @@ const Contact = () => {
             register={register('company', contactFormValidation.company)}
             error={errors.company}
             maxLength={200}
-            showCharacterCount={true}
+            showCharacterCount={false}
             realTimeValidation={realTimeValidators.validateCompanyRealTime}
           />
 
