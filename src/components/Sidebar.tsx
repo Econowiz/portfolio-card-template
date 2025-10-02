@@ -68,7 +68,7 @@ const Sidebar = () => {
               src="/images/placeholder-portrait.jpg"
               alt="Your Name"
               loading="lazy"
-              className="w-44 h-52 rounded-2xl object-cover ring-1 ring-white/10 shadow-lg shadow-black/30"
+              className="w-44 h-60 sm:h-64 rounded-2xl object-cover object-top ring-1 ring-white/10 shadow-lg shadow-black/30"
             />
           </div>
 
